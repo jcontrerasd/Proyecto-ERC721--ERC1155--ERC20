@@ -3,11 +3,129 @@
 
 El despliegue de los 3 contratos permite la operación en conjunto, cada uno tomando un rol. 
 
-**1_TOKEN_ERC721.sol :** Permite crear un NFT (MUTS), el cual será transand en por 3_EXCHANGE_ERC1155.sol, previa aprobación
+**1_TOKEN_ERC721.sol (0x7Cd3119EF33C45BB72e11B2fD314f8099A336a89) :**
 
-**2_TOKEN_ERC20.sol :** Permite crear un Token que se utilizará para realizar el pago del NFT, pervia apobración de 3_EXCHANGE_ERC1155.sol.
+  Permite crear un NFT (MUTS), el cual será transand en por 3_EXCHANGE_ERC1155.sol, previa aprobación.
 
-**3_EXCHANGE_ERC1155.sol :** Contrato encargado de realizar la comercializacón del Token MUTS a un precio STT acordado, transfiereonc los STT al vendedor y el MUTS al comprador.
+### Read Contract ###
+
+    **1. balanceOf :** Devuelve la cantidad de un token que posee una dirección.
+    
+    **2. getApproved :** Devuelve la dirección que está autorizada para transferir un token en nombre de otra dirección.
+    
+    **3. isApprovedForAll :** Devuelve si una dirección está autorizada para transferir todos los tokens en nombre de otra dirección.
+    
+    **4. name :** Devuelve el nombre del token.
+    
+    **5. owner :** Proporciona la Address del propietario
+    
+    **6. ownerOf :** Devuelve la dirección del propietario de un token.
+    
+    **7. supportsInterface :** Devuelve si un contrato implementa una interfaz.
+    
+    **8. symbol :** Devuelve el símbolo del token.
+    
+    **9. tokenURI :** Devuelve la URI del token.
+
+
+### Write Contract ###
+
+    **1. approve :** Autoriza a una dirección para transferir un token en nombre de otra dirección.
+  
+    **2. safeMint:**	Permite al propietario del contrato crear y asignar un nuevo NFT.
+  
+    **3. safeTransferFrom :** Transfiere un token de una dirección a otra de forma segura, verificando que la transferencia es válida y que el receptor tiene suficiente saldo.
+  
+    **4. safeTransferFrom :** Transfiere un token de una dirección a otra de forma segura, verificando que la transferencia es válida y que el receptor tiene suficiente saldo.
+  
+    **5. setApprovalForAll :** Permite a un propietario de NFT autorizar a otra dirección para transferir todos sus NFTs en su nombre.
+  
+    **6. setOwner	:** Permite al propietario del contrato cambiar la dirección del propietario del contrato.
+  
+    **7. transferFrom :** Transfiere un token de una dirección a otra
+
+  ## IMPORTANTE ##
+    **3. safeTransferFrom() (ERC721) :** Transfiere un token de una dirección a otra. No verifica que el receptor tenga suficiente saldo.
+    **4. safeTransferFrom() (OpenZeppelin) :** Transfiere un token de una dirección a otra de forma segura. 
+                                                 Verifica que el receptor tenga suficiente saldo y que el remitente esté autorizado para transferir el token.
+
+
+  
+**2_TOKEN_ERC20.sol (0x429edd3882335de0c8193a866cdfca821d2b2df3):**
+
+  Permite crear un Token que se utilizará para realizar el pago del NFT, pervia apobración de 3_EXCHANGE_ERC1155.sol.
+
+### Read Contract ###
+
+    **1. DOMAIN_SEPARATOR :** Devuelve el separador de dominio utilizado en la codificación de la firma del permiso, según lo definido por EIP712.
+    
+    **2. allowance :** Devuelve el número restante de tokens que el gastador podrá gastar en nombre del propietario a través de **transferFrom**. Es cero por defecto.
+    
+    **3. balanceOf :** Devuelve el valor de la cantidad de tokens propiedad de la cuenta.
+    
+    **4. decimals :** Devuelve los decimales del token.
+    
+    **5. eip712Domain :** Devuelve los campos y valores que describen el separador de dominio utilizado por este contrato para la firma EIP-712.
+    
+    **6. name :** Devuelve el nombre del token.
+    
+    **7. nonces :** Devuelve el nonce actual del propietario. Este valor debe incluirse siempre que se genere una firma para el permiso.
+    
+    **8. owner :** Devuelve la dirección del propietario actual.
+    
+    **9. symbol :** Devuelve el símbolo del token.
+    
+    **10. totalSupply :** Devuelve el valor de los tokens existentes.
+
+### Write Contract ###
+
+    **1. approve :** Establece una cantidad de valor de tokens como la asignación del gastador sobre los tokens de la persona que llama. 
+    
+    **2. mint :** Crea una cantidad de tokens y los asigna a la cuenta.
+    
+    **3. permit :** Establece el valor como la asignación del gastador sobre los tokens del propietario, dada la aprobación firmada del propietario.
+    
+    **4. setOwner :** Permite asignar un nuevo dueño del contrato.
+    
+    **5. transfer :** Mueve una cantidad de tokens de la cuenta de la persona que llama. 
+    
+    **6. transferFrom :** Mueve una cantidad de tokens usando el mecanismo de asignación. Luego, el valor se deduce de la asignación de la persona que llama.
+
+
+
+**3_EXCHANGE_ERC1155.sol (0xAa306058A50b82EE5D2e3A7b6b426247F519be59) :**
+
+  Contrato encargado de realizar la comercializacón del Token MUTS a un precio STT acordado, transfiereonc los STT al vendedor y el MUTS al comprador.
+
+### Read Contract ###
+
+      **1. balanceOf : ** Devuelve la cantidad de un token que posee una dirección.   
+      
+      **2. balanceOfBatch :** Devuelve la cantidad de un token que poseen varias direcciones.
+      
+      **3. isApprovedForAll :** Devuelve si una dirección está aprobada para transferir tokens en nombre de otra dirección.
+      
+      **4. isTokenListed :** Devuelve si un token está listado en una plataforma de intercambio.
+      
+      **5. listings :** Devuelve una lista de plataformas de intercambio donde se puede comprar o vender un token.
+      
+      **6. supportInterface :**  Devuelve si un contrato inteligente implementa una interfaz determinada.
+      
+      **7. uri :** Devuelve un URI que describe el token.
+      
+
+### Write Contract ###
+
+      **1. bufNFT : **  Permite comprar un token NFT indicando el TokenId de lista de tokens en venta.
+      
+      **2. listNFT : **  Permite poner en la lista de venta un Token y su precio asociado a un contraro ERC721.
+      
+      **3. safeBatchTransferFrom : **  Transfiere un conjunto de tokens NFT de una dirección a otra.
+      
+      **4. safeTransferFrom : **  Transfiere un token de una dirección a otra de forma segura, verificando que la transferencia es válida y que el receptor tiene suficiente saldo.
+      
+      **5. setApprovalForAll : ** Permite a un propietario de NFT autorizar a otra dirección para transferir todos sus NFTs en su nombre.
+
 
 ### * **¿Qué caso de uso pretende resolver tu (colección) NFT?**
 
