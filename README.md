@@ -92,7 +92,7 @@ A continuación se reflejan los pasos que se deben seguir para un escenario de s
 <img width="300" height="500" alt="image" src="https://github.com/jcontrerasd/Proyecto-ERC721--ERC1155--ERC20/assets/27821228/6588dec7-706b-4db5-afb2-897b76bfdd1c">
 
 ### PASO 5: COMPRAR (3_EXCHANGE_ERC1155.sol : 0xAa306058A50b82EE5D2e3A7b6b426247F519be59)
-<span style="color:blue">Esta es una nota en color azul.</span>
+    * Nota : Los NFT se debe importar con  la dirección del contrato más el TokenId. *
 * Transaction Hash:0xbb661e99accef0ffcfe88d7c32dc65fcdeb173a64b567449d54215877a4893cf
 
   * PREVIA COMPRA - DATOS COMPRADOR
@@ -117,3 +117,11 @@ A continuación se reflejan los pasos que se deben seguir para un escenario de s
   
      <img width="300" height="500" alt="image" src="https://github.com/jcontrerasd/Proyecto-ERC721--ERC1155--ERC20/assets/27821228/d2c800f9-aa03-4bc0-bdcd-e9ff46e48582">
   
+
+## OPEN SEA : https://testnets.opensea.io/assets/goerli/0x7Cd3119EF33C45BB72e11B2fD314f8099A336a89/1
+
+   <img width="1000" height="800" alt="image" src="https://github.com/jcontrerasd/Proyecto-ERC721--ERC1155--ERC20/assets/27821228/8c2d95cb-18ba-4a41-a8db-bfde00cdc173">
+    
+##Se utilizo NFT.storage para almacenar el NFT y crear su IPFS URL (uri)
+
+   <img width="1228" alt="image" src="https://github.com/jcontrerasd/Proyecto-ERC721--ERC1155--ERC20/assets/27821228/40d9fb7f-93ea-4158-acdc-abe0155fd9b9">
