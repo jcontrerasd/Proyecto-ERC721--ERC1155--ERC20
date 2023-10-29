@@ -82,3 +82,38 @@ A continuación se reflejan los pasos que se deben seguir para un escenario de s
 <img width="800" height="800" alt="image" src="https://github.com/jcontrerasd/Proyecto-ERC721--ERC1155--ERC20/assets/27821228/0db29054-aa87-408a-a4e5-7373ee58e62a">
 
 
+### PASO 4: DAR APROBACIÓN DE ERC20 PARA QUE EXCHANGE PUEDA REALIZAR LA COMPRA Y POSTERIOR TRANSFERENCIA DE ERC721 (2_TOKEN_ERC20.sol :  0x429edd3882335de0c8193a866cdfca821d2b2df3)
+
+* Transaction Hash: 0xf5db319f19f7feddc907d934d2cb38a041eae7d33d9b50e70d14685c39096eda
+
+<img width="800" height="800" alt="image" src="https://github.com/jcontrerasd/Proyecto-ERC721--ERC1155--ERC20/assets/27821228/26c98c98-5e81-4432-9e69-1fc861a40bee">
+
+<img width="300" height="500" alt="image" src="https://github.com/jcontrerasd/Proyecto-ERC721--ERC1155--ERC20/assets/27821228/b6542020-8048-4149-b22e-73d0a3263e11">
+<img width="300" height="500" alt="image" src="https://github.com/jcontrerasd/Proyecto-ERC721--ERC1155--ERC20/assets/27821228/6588dec7-706b-4db5-afb2-897b76bfdd1c">
+
+### PASO 5: COMPRAR (3_EXCHANGE_ERC1155.sol : 0xAa306058A50b82EE5D2e3A7b6b426247F519be59)
+<span style="color:blue">Esta es una nota en color azul.</span>
+* Transaction Hash:0xbb661e99accef0ffcfe88d7c32dc65fcdeb173a64b567449d54215877a4893cf
+
+  * PREVIA COMPRA - DATOS COMPRADOR
+    
+    <img width="300" height="500" alt="image" src="https://github.com/jcontrerasd/Proyecto-ERC721--ERC1155--ERC20/assets/27821228/901ae995-3372-4d6e-9c21-630058a17c1e">
+    <img width="300" height="500"  alt="image" src="https://github.com/jcontrerasd/Proyecto-ERC721--ERC1155--ERC20/assets/27821228/5b9bde7e-95dd-4d8d-b59b-890443cbf549">
+
+  * PREVIA COMPRA - DATOS VENDEDOR
+
+    <img width="300" height="500"  alt="image" src="https://github.com/jcontrerasd/Proyecto-ERC721--ERC1155--ERC20/assets/27821228/9c14a468-6d30-4813-86d2-a672f813efca">
+    <img width="300" height="500"  alt="image" src="https://github.com/jcontrerasd/Proyecto-ERC721--ERC1155--ERC20/assets/27821228/47350a07-de15-4a48-be5e-eacef1409888">
+
+  * POST COMPRA - DATOS COMPRADOR
+
+    <img width="300" height="500" alt="image" src="https://github.com/jcontrerasd/Proyecto-ERC721--ERC1155--ERC20/assets/27821228/5769be50-55c6-4d85-9a43-dd85a95db105">
+    
+    <img width="300" height="500" alt="image" src="https://github.com/jcontrerasd/Proyecto-ERC721--ERC1155--ERC20/assets/27821228/ae4c6fe4-a5b0-4ff3-947c-5cf878d4c441">
+
+   * POST COMPRA - DATOS VENDEDOR
+ 
+     <img width="300" height="500" alt="image" src="https://github.com/jcontrerasd/Proyecto-ERC721--ERC1155--ERC20/assets/27821228/136e833c-a67e-448a-9338-45d77d4b523f">
+  
+     <img width="300" height="500" alt="image" src="https://github.com/jcontrerasd/Proyecto-ERC721--ERC1155--ERC20/assets/27821228/d2c800f9-aa03-4bc0-bdcd-e9ff46e48582">
+  
