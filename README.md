@@ -9,7 +9,7 @@ El despliegue de los 3 contratos permite la operación en conjunto, cada uno tom
 
 **3_EXCHANGE_ERC1155.sol :** Contrato encargado de realizar la comercializacón del Token MUTS a un precio STT acordado, transfiereonc los STT al vendedor y el MUTS al comprador.
 
-* **¿Qué caso de uso pretende resolver tu (colección) NFT?**
+### * **¿Qué caso de uso pretende resolver tu (colección) NFT?**
 
   ** Memorias Urbanas Token (MUTS) es una colección de NFTs que retrata la historia de ciudades a lo largo del tiempo.**
   
@@ -24,7 +24,7 @@ El despliegue de los 3 contratos permite la operación en conjunto, cada uno tom
   * **Exposición Digital**: Un museo de arte urbano organiza una exposición digital titulada "Memorias Urbanas: Ciudades en Transformación". Utilizan MUT para mostrar cómo las ciudades han cambiado con el tiempo a través de obras de artistas locales e internacionales. Los visitantes pueden explorar estas representaciones visuales de la historia urbana a través de NFTs en una plataforma en línea. La exposición ofrece una experiencia inmersiva que resalta la importancia de preservar y apreciar el patrimonio urbano. Los MUT se convierten en una forma única de conectar a las personas
 
 
-* **¿Qué valor añadido aporta esta (colección) NFT a las existentes?**
+### * **¿Qué valor añadido aporta esta (colección) NFT a las existentes?**
 
   La colección de NFT Memorias Urbanas Token (MUTS) se destaca al fusionar el arte con el patrimonio cultural, representando momentos específicos y únicos en la evolución      de las ciudades. 
   Cada MUTS es una obra de arte históricamente valiosa, creada por artistas, lo que garantiza autenticidad y unicidad. Lo que distingue a esta colección de otras radica en     su capacidad para ofrecer una experiencia inmersiva y educativa.
@@ -34,10 +34,13 @@ El despliegue de los 3 contratos permite la operación en conjunto, cada uno tom
 
 
   
-* **¿Cómo crees que podría mejorarse técnicamente?**
-    * Asegurar interoperatibilidad con distintos NFTS, aprovechando las ventanjas de ERC1155 
-    * Construir una aplicación Web3 que permita tener una mejor experiencia de usuario 
-    * Conectar con opensea, manteniendo independencia a fin de evolucionar según las necesidades propias del proyecto 
-    * Definir y Transparentar el modelo Tokenomics para sustentar todo el modelo 
+### * **¿Cómo crees que podría mejorarse técnicamente?**
+
+     * Si bien parece natural unificar algunos contratos, es un ambito técnico que se se debería revisar a fin de definir claramente al arquitectura de la solución, en              terminos de una solución desacoplada con sus pros y contras.
+     * Como mejora o complemento aportaría valor el tratar de dar mayor visiblidad a los NFT a fin de que la comunidad pueda disfrutar de la colección mediante una                  plataforma que los exponga y permita contar la "historia" enlazandola con acontencimientos historicos. 
+     * Asegurar interoperatibilidad con distintos NFTS, aprovechando las ventanjas de ERC1155 
+     * Construir una aplicación Web3 que permita tener una mejor experiencia de usuario 
+     * Conectar con opensea, manteniendo independencia a fin de evolucionar según las necesidades propias del proyecto 
+     * Definir y Transparentar el modelo Tokenomics para sustentar todo el modelo 
 
 A continuación se reflejan los pasos que se deben seguir para un escenario de simulación :
