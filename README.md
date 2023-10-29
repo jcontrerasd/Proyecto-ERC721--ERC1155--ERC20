@@ -3,7 +3,7 @@
 
 El despliegue de los 3 contratos permite la operación en conjunto, cada uno tomando un rol. 
 
-**1_TOKEN_ERC721.sol (0x7Cd3119EF33C45BB72e11B2fD314f8099A336a89) :**
+##  **1_TOKEN_ERC721.sol (0x7Cd3119EF33C45BB72e11B2fD314f8099A336a89) :**
 
   Permite crear un NFT (MUTS), el cual será transand en por 3_EXCHANGE_ERC1155.sol, previa aprobación.
 
@@ -32,7 +32,7 @@ El despliegue de los 3 contratos permite la operación en conjunto, cada uno tom
 
     **1. approve :** Autoriza a una dirección para transferir un token en nombre de otra dirección.
   
-    **2. safeMint:**	Permite al propietario del contrato crear y asignar un nuevo NFT.
+    **2. safeMint:** Permite al propietario del contrato crear y asignar un nuevo NFT.
   
     **3. safeTransferFrom :** Transfiere un token de una dirección a otra de forma segura, verificando que la transferencia es válida y que el receptor tiene suficiente saldo.
   
@@ -51,7 +51,7 @@ El despliegue de los 3 contratos permite la operación en conjunto, cada uno tom
 
 
   
-**2_TOKEN_ERC20.sol (0x429edd3882335de0c8193a866cdfca821d2b2df3):**
+##  **2_TOKEN_ERC20.sol (0x429edd3882335de0c8193a866cdfca821d2b2df3):**
 
   Permite crear un Token que se utilizará para realizar el pago del NFT, pervia apobración de 3_EXCHANGE_ERC1155.sol.
 
@@ -90,10 +90,9 @@ El despliegue de los 3 contratos permite la operación en conjunto, cada uno tom
     **5. transfer :** Mueve una cantidad de tokens de la cuenta de la persona que llama. 
     
     **6. transferFrom :** Mueve una cantidad de tokens usando el mecanismo de asignación. Luego, el valor se deduce de la asignación de la persona que llama.
-
-
-
-**3_EXCHANGE_ERC1155.sol (0xAa306058A50b82EE5D2e3A7b6b426247F519be59) :**
+    
+    
+##  **3_EXCHANGE_ERC1155.sol (0xAa306058A50b82EE5D2e3A7b6b426247F519be59) :**
 
   Contrato encargado de realizar la comercializacón del Token MUTS a un precio STT acordado, transfiereonc los STT al vendedor y el MUTS al comprador.
 
@@ -161,7 +160,8 @@ El despliegue de los 3 contratos permite la operación en conjunto, cada uno tom
      * Conectar con opensea, manteniendo independencia a fin de evolucionar según las necesidades propias del proyecto 
      * Definir y Transparentar el modelo Tokenomics para sustentar todo el modelo 
 
-A continuación se reflejan los pasos que se deben seguir para un escenario de simulación, además de las Address de cada contrato para tener la trazabilidad.
+
+## ** A continuación se reflejan los pasos que se deben seguir para un escenario de simulación, además de las Address de cada contrato para tener la trazabilidad.**
 
 ### PASO 1 : CREAR TOKEN MUTS (1_TOKEN_ERC721.sol : 0x7Cd3119EF33C45BB72e11B2fD314f8099A336a89) ###
 
