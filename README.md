@@ -1,6 +1,9 @@
 # Proyecto-ERC721--ERC1155--ERC20
 # Creación de Contratos NFT ERC72 (MUTS), Token ERC20(STT), y Exchange ERC1155
 
+<img width="536" alt="image" src="https://github.com/jcontrerasd/Proyecto-ERC721--ERC1155--ERC20/assets/27821228/e85327d2-9429-49fb-9bf2-d9bf238c36af">
+
+
 El despliegue de los 3 contratos permite la operación en conjunto, cada uno tomando un rol. 
 
 ##  **1_TOKEN_ERC721.sol (0x7Cd3119EF33C45BB72e11B2fD314f8099A336a89) :**
